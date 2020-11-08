@@ -52,7 +52,8 @@ char	*cleanline(char **line, char *s_line[fd])
 		*line = ft_calloc(pos + 1, sizeof(char));
 		tmp = ft_calloc(ft_strlen(&s_line[fd][pos + 1]) + 1, sizeof(char));
 		ft_strlcpy(*line, s_line[fd], pos + 1);
-		ft_strlcpy(tmp, &s_line[fd][pos + 1], ft_strlen(&s_line[fd][pos + 1]) + 1);
+		ft_strlcpy(tmp, &s_line[fd][pos + 1],
+				ft_strlen(&s_line[fd][pos + 1]) + 1);
 		free(s_line[fd]);
 		s_line[fd] = NULL;
 		return (tmp);

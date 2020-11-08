@@ -19,7 +19,7 @@
 # include <limits.h>
 
 int		get_next_line_bonus(int fd, char **line);
-int		isbarran(char *s_line);
+int		ft_isnl(char *s_line);
 char	*ft_strjoin(char *s1, char *s2);
 char	*cleanline(char **line, char *s_line);
 size_t	ft_strlen(char *str);
